@@ -1,0 +1,647 @@
+/*----------------------------------------Reset CSS----------------------------------------------------*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+/*------------------------------------------WEB-----------------------------------------------------*/
+
+
+
+
+html{
+    font-size: 6px;
+}
+body{
+    background-color: #17232f;
+}
+
+.website{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+/*------------------------------------------HEADER----------------------------------------------------*/
+
+
+
+.website header {
+    width: 100%;
+    height: auto ;
+    position: relative;
+}
+.web_up{
+    width: 100%;
+    height: 2rem;
+    background-color: #020c18;
+}
+.website header nav {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+}
+figure.logo {
+    width: 5.5rem;
+    height: 5rem;
+    background-image: url(images/BHA.png);
+    background-size: 100%;
+    border-radius: 2rem;
+    display: inline-block;
+    margin: 0.5rem 0 0 2rem;
+}
+div.logo {
+    width: 8rem;
+    height: 6rem;
+    background-color: #020c18;
+    margin: 0;
+}
+.text-boxing{
+    display: inline-block;
+    font: bold 1.5rem Tahoma;
+    line-height: 6rem;
+    color: #e2e2e1;
+    margin: 0;
+}
+.text-house{
+    font: bold 1.1rem Tahoma;
+}
+.language{
+    width: 7%;
+    height: 39%;
+    margin-top: 1.5rem;
+    margin-right: 1rem ;
+    margin-left: 40%;
+}
+.language select{
+    width: 100%;
+    height: 100%;
+    background-color: #17232f;
+    font: bold 1.2rem tahoma;
+    color: #e2e2e1;
+    text-align: center;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    appearance: none;
+    text-overflow: none;
+}
+.language select:hover{
+    background-color: #e2e2e1;
+    color: #17232f;
+}
+.login_button{
+    width: 14%;
+    height: 39%;
+    font:  1.2rem tahoma;
+    color: #e2e2e1;
+    text-align: center;
+    padding: 0.4rem 0 0 0;
+    border: 1px solid #e2e2e1;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 0;
+    margin-top: 1.5rem;
+}
+.login_button:hover{
+    background-color: #e2e2e1;
+    color: #17232f;
+}
+.chevron{
+    width: 8%;
+    height: 5.5rem;
+    font-size: 2rem;
+    color: #e2e2e1;
+    text-align: center;
+    line-height: 5.5rem;
+    transition: all 0.2s;
+}
+.fa-list{
+    display: none;
+}
+.chevron:hover .fa-list{
+    display: inline-block;
+
+}
+.chevron:hover .fa-ellipsis-vertical{
+    display: none;
+}
+.menu_header{
+    display: none;
+}
+.banner{
+    width: 100%;
+    height: 60rem;
+    background-image: url(images/images_6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scalex(-1);
+    border-radius: 0  0 0 10rem;
+    position: absolute;
+    box-shadow: 0.1rem 0.1rem 2rem #020c18 , -0.1rem 0 2rem #020c18 ; 
+    z-index: 1;
+    opacity:0.92;
+}
+.poster{
+    width: 100%;
+    height: 60rem;
+    background-color: #e2e2e1;
+}
+.span{
+    position: absolute;
+    margin: 10rem 0 0 10rem;
+    width: 25rem;
+    height: 40rem;
+    z-index: 2;
+    text-align: center;
+}
+.slogan{
+    font: bold 4rem tahoma;
+    color: #e2e2e1;
+    text-align: center;
+
+}
+.poster hr{
+    color: #e2e2e1;
+    width: 21rem;
+    margin: 1rem auto;
+}
+.companie_name{
+    font: bold 3rem tahoma;
+    color: #e2e2e1;
+    text-align: center;
+}
+.more-button{
+    width: 60%;
+    height: 12%;
+    background-color: #17232f;
+    font:  3rem tahoma;
+    color: #e2e2e1;
+    text-align: center;
+    border: 1px solid #e2e2e1;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+}
+.more-button:hover{
+    background-color: #e2e2e1;
+    color: #17232f;
+    transition: all 0.4s;
+}
+
+/*------------------------------------------MAIN--------------------------------------------------------*/
+
+main{
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+}
+main section{
+    width: 90%;
+    height: 65rem;
+    margin: 0 auto;
+}
+.promotion_image{
+    width: 85%;
+    height: 40rem;
+    margin: 4rem auto;
+    box-shadow:0.1rem 0.1rem 3rem #03528a , -0.1rem 0 4rem #b70326;
+}
+.promotion_web{
+    display: none;
+}
+.promotion_image_1{
+    background-image: url(images/images_4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.promotion_image_2{
+    background-image: url(images/images_7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.promotion_image_3{
+    background-image: url(images/images_5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.promotion_txt{
+    text-align: center;
+    font: bold 2.5rem tahoma;
+    margin-top: 6rem;
+    margin-bottom: 15rem;
+    color: #e2e2e1;
+}
+.promotion_txt span:first-child{
+    text-align: center;
+    font: bold 3.2rem tahoma;
+    margin-top: 5rem;
+    color: #e2e2e1;
+}
+.section_sub{
+    width: 100%;
+    height: 230rem;
+}
+.section_sub section{
+    width: 70%;
+    height: 70rem;
+    margin: 6rem auto;
+    background-color: #043c64;
+    border-radius: 2rem 2rem 10rem 0;
+    padding: 2rem ;
+}
+.sub_title{
+    width: 100%;
+    display: inline-block;
+    font: bold 5rem tahoma;
+    color: #e2e2e1;
+    text-shadow:0 0 3rem #b70326;
+    text-align: center;
+}
+.sub_price{
+    font: bold 5rem tahoma;
+    color: #e2e2e1;
+    text-shadow:0 0 3rem #03b775;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    display: inline-block;
+}
+.user_month{
+    font: bold 2rem tahoma;
+    color: #e2e2e1; 
+    margin-left: 2.5rem;
+    display: inline-block;
+}
+.tax{
+    display: inline-block;
+    font: bold 2rem tahoma;
+    color: #e2e2e1;
+    margin-left: 7rem;
+    margin-top: 6rem;
+}
+.buy_button{
+    width: 40%;
+    height: 8rem;
+    background-color: #e2e2e1;
+    font:  3rem tahoma;
+    color: #03b775;
+    text-align: center;
+    border: 1px solid #03b775;
+    border-radius: 0.8rem;
+    box-shadow:0.1rem 0.1rem 3rem #03528a , -0.1rem 0 4rem #b70326;
+    margin: 1.5rem 29%;
+}
+.buy_button:hover{
+    background-color: #03b775;
+    color: #e2e2e1;
+    transition: all 0.4s;
+}
+.include{
+    display: inline-block;
+    font: bold 2.7rem tahoma;
+    color: #e2e2e1;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+.serve{
+    display: inline-block;
+    font: bold 2.7rem tahoma;
+    color: #e2e2e1;
+    margin-left: 3.8rem;
+    margin-top: 2rem;
+    padding: 0 4rem;
+}
+.serve i{
+    margin-right: 1.5rem;
+}
+
+/* *------------------------------------------subscriptionPiece--------------------------------------------------------*/
+.subscriptionPiece{
+    width: 35%;
+    height: 70%;
+    background-color: #03b775;
+    position:fixed;
+    display: none;
+    z-index: 1;
+    margin: 5rem 0 0 32%;
+    border-radius: 2.5rem;
+    padding: 2% 0 0 0;
+}
+.closedButtonSubs{
+    float: right;
+    margin-right: 2rem ;
+    margin-top: -1rem;
+    font-size: 2.5rem;
+    color: red;
+}
+/* !------------------------------------------FOOTER--------------------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 18rem;
+    background-color: #020c18;
+    border-radius: 2rem 2rem 0 0;
+    box-shadow: 0 0 10rem #03528a;
+}
+.footer_div{
+    display: flex;
+}
+.footer_div_1{
+    display: block;
+    width: 100%;
+    height: 7rem;
+    text-align: center;
+    font: bold 4rem tahoma;
+    color: #e2e2e1;
+    padding-top: 2rem;
+    text-shadow: 0 0 10rem #03528a,0 0 8rem #b70326,0 0 6rem #03b775;
+}
+.footer_div_2{
+    width: 50%;
+    height:9rem;
+}
+.footer_div_2 ul{
+    margin: 4rem 0 0 3rem;
+    font: bold 1.3rem tahoma;
+    list-style:disc;
+    color: #e2e2e1;
+}
+.footer_div_2 ul li{
+    float: left;
+    margin-left: 2rem;
+}
+.footer_div_2 a{
+    text-decoration: none;
+    color: #03528a;
+}
+.footer_div_2 a:hover{
+    text-decoration: underline;
+    color: #e2e2e1;
+    transition: all 0.3s;
+}
+.footer_div_3{
+    width: 50%;
+    height:9rem;
+    font: bold 2rem tahoma;
+    color: #03528a;
+}
+.footer_div_3 div:first-child{
+    margin: 2.3rem 0 0 20rem;
+    text-align: center;
+}
+.fa-copyright{
+    font-size:  1.2rem;
+}
+.footer_div_3 span{
+    font: bold 1.2rem tahoma;
+}
+.footer_div_3 a{
+    color: #03528a;
+    margin: 0 0 0 0.4rem;
+}
+.footer_div_3 a:hover i{
+    color: #e2e2e1;
+}
+/* !------------------------------------------RESPONSIV--------------------------------------------------*/
+
+
+
+
+
+@media screen and (max-width:320px) {
+    html{
+        font-size: 2px;
+    } 
+}
+@media screen and (max-width:500px) {
+    html{
+        font-size: 4px;
+    } 
+}
+@media screen and (min-width:670px) {
+    html{
+        font-size: 8px;
+    } 
+}
+@media screen and (min-width:910px) {
+    html{
+        font-size: 10px;
+    } 
+    .section_sub{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .section_sub section{
+        width: 30%;
+        height: 35rem;
+        margin: 6rem auto;
+        background-color: #043c64;
+        border-radius: 1rem 1rem 5rem 0;
+    }
+    .sub_title{
+        width: 100%;
+        display: inline-block;
+        font: bolder 2.5rem tahoma;
+        color: #e2e2e1;
+        text-shadow:0 0 3rem #b70326;
+        text-align: center;
+    }
+    .sub_price{
+        font: bold 2rem tahoma;
+        color: #e2e2e1;
+        text-shadow:0 0 3rem #03b775;
+        margin-left: 6rem;
+        margin-top: 1.5rem;
+        display: inline-block;
+    }
+    .user_month{
+        font: bold 1rem tahoma;
+        color: #e2e2e1; 
+        margin-left: 0.5rem;
+        display: inline-block;
+    }
+    .tax{
+        display: inline-block;
+        font: bold 1rem tahoma;
+        color: #e2e2e1;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    .buy_button{
+        width: 40%;
+        height: 3rem;
+        background-color: #e2e2e1;
+        font:  1.5rem tahoma;
+        color: #03b775;
+        text-align: center;
+        border: 1px solid #03b775;
+        border-radius: 0.8rem;
+        box-shadow:0.1rem 0.1rem 3rem #03528a , -0.1rem 0 4rem #b70326;
+        margin: 1.5rem 29%;
+    }
+    .buy_button:hover{
+        background-color: #03b775;
+        color: #e2e2e1;
+        transition: all 0.4s;
+    }
+    .include{
+        display: inline-block;
+        font: bold 1rem tahoma;
+        color: #e2e2e1;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+    }
+    .serve{
+        display: inline-block;
+        font: bold 1rem tahoma;
+        color: #e2e2e1;
+        margin-left: 2.5rem;
+        margin-top: 1rem;
+        padding: 0 2rem;
+    }
+    .serve i{
+        margin-right: 0.5rem;
+    }
+}
+@media screen and (min-width:1150px) {
+    html{
+        font-size: 12px;
+    } 
+    .text-boxing{
+        display:none;
+    }
+    .login_button{
+        width: 10%;
+        margin-right: 1rem;
+    }
+    .language{
+        margin-left: 9rem;
+    }
+    .chevron{
+        display:none;
+    }
+    .menu_header{
+        display: flex;
+        width: 70%;
+    }
+    .menu_header ul{
+        display: flex;
+        width: 100%;
+    }
+    .menu_header ul li{
+        float: left;
+        width:20%;
+    }
+    .menu_header ul li a{
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        text-align: center;
+        font: bold 1.3rem tahoma;
+        color: #e2e2e1;
+        line-height: 5rem;
+    }
+    .menu_header .halls{
+        background-color: #020c18;
+    }
+    .menu_header ul li a:hover{
+        color: #e2e2e1;
+        text-shadow: 0 0 100% #03528a;
+        background-color: #020c18;
+    }
+
+}
+@media screen and (min-width:1370px) {
+    html{
+        font-size: 14px;
+    } 
+    .section_main{
+        width: 90%;
+        height: 35rem;
+        margin: 0 auto;
+        display: flex;
+    }
+    .promotion_image{
+        width: 65%;
+        height: 25rem;
+        margin: 4rem auto;
+        box-shadow:0.1rem 0.1rem 3rem #03528a , -0.1rem 0 4rem #b70326;
+    }
+    .promotion_mobile{
+        display: none;
+    }
+    .promotion_web{
+        display: block;
+    }
+    .promotion_txt{
+        display: inline-block;
+        text-align: center;
+        font: bold 1.5rem tahoma;
+        color: #e2e2e1;
+    }
+    .promotion_txt span:first-child{
+        text-align: center;
+        font: bold 3.2rem tahoma;
+        margin-top: 5rem;
+        color: #e2e2e1;
+    }
+}
+@media screen and (min-width:1600px) {
+    html{
+        font-size: 16px;
+    } 
+}

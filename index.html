@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHA.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/BHA.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d97c0e3840.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--
+        !---------------------------------Section Subscribtion----------------------------------------------------------
+    -->
+    <section id="subscriptionPiece" class="subscriptionPiece" >
+        <a href=""><i class='fa-solid fa-xmark closedButtonSubs' onclick="clickSpace()"></i>
+        <span class="sub_title" id="sub_title"></span><br>
+        <span class="sub_price" id="sub_price">USD$ </span><span class="user_month">aylıq</span><br>
+        <span class="tax">Vergi qiymətə daxil deyil</span><br>
+        <a href="https://www.google.com" target="_blank"><button type="button" class="buy_button" id="buy_button">Ödənişə Keç</button></a><br>
+        <span class="include">Xidmətlər:</span><br>
+        <span class="serve" id="serve1">
+        </span><br>
+        <span class="serve" id="serve2">
+        </span><br>
+        <span class="serve" id="serve3">
+        </span>
+    </section>
+    <div class="website">
+        <header>
+            <div class="web_up" id="web_up"></div>
+            <nav class="header" id="header">
+                <div class="logo" id="logo"><figure class="logo" id="logo"></figure></div>
+                <div class="menu_header" id="menu_header">
+                    <ul>
+                        <li><a class="halls" href="">Zallar</a></li>
+                        <li><a href="">Təhsil</a></li>
+                        <li><a href="">Müəllimlər</a></li>
+                        <li><a href="">Tələbələr</a></li>
+                        <li><a href="">Biz</a></li>
+                    </ul>
+                </div>
+                <span class="text-boxing">BOXING<span class="text-house"> house </span>AZERBAIJAN</span>
+                <div class="language">
+                    <select  name="language" id="language">
+                        <option value="aze">AZE</option>
+                        <option value="tr">TR</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+                <div class="login_button">LOGIN<i class="fa-regular fa-user"></i></div>
+                <div class="chevron">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </nav>
+            <figure class="poster">
+                <div class="span">
+                    <span class="slogan">Nömrə I<br>Boks Klubu <hr></span>
+                    <span class="companie_name">BHA<br>Boxing<br> house <br>Azerbaijan <hr></span>
+                    <button class="more-button">More</button>
+                </div>
+                <figure class="banner"></figure>
+            </figure>
+        </header>
+        <main>
+            <section class="section_1 section_main">
+                <div class="promotion_image_1 promotion_image"></div>
+                <div class="promotion_txt_1 promotion_txt">
+                    <span>0'DAn BAşlayın</span>
+                    <hr>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tenetur ipsa maiores accusamus quibusdam incidunt.
+                    </span>
+                </div>
+            </section>
+            <section class="section_2 section_main">
+                <div class="promotion_image_2 promotion_mobile promotion_image"></div>
+                <div class="promotion_txt_2 promotion_txt">
+                    <span>Müəllimlərimizin Dəstəyi İlə Addım-Addım</span>
+                    <hr>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tenetur ipsa maiores accusamus quibusdam incidunt.
+                    </span>
+                </div>
+                <div class="promotion_image_2 promotion_web promotion_image"></div>
+            </section>
+            <section class="section_3 section_main">
+                <div class="promotion_image_3 promotion_image"></div>
+                <div class="promotion_txt_3 promotion_txt">
+                    <span>Özünüzü Yenidən Yaradın</span>
+                    <hr>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tenetur ipsa maiores accusamus quibusdam incidunt.
+                    </span>
+                </div>
+            </section> 
+            <!--
+                !---------------------------------Section Subscribtion----------------------------------------------------------
+            -->
+            <section class="section_sub">
+                <section class="basic_sub">
+                    <span class="sub_title">BHA BASIC</span><br>
+                    <span class="sub_price">USD$ 30</span><span class="user_month">aylıq</span><br>
+                    <span class="tax">Vergi qiymətə daxil deyil</span><br>
+                    <button type="button" class="buy_button" id="buy_button" onclick="buyButtonClick('basic')">İndi Al</button><br>
+                    <span class="include">Xidmətlər:</span><br>
+                    <span class="serve">
+                        <i class="fa-solid fa-check"></i> 10:00-22:00 Məşq etmək
+                    </span><br>
+                    <span class="serve">
+                        <i class="fa-solid fa-check"></i> Zaldakı bütün alətlərdən istifadə etmək
+                    </span><br>
+                    <span class="serve">
+                        <i class="fa-solid fa-xmark"></i> Zal tərəfindən ləvazimatla təmin olunmaq
+                    </span>
+                </section>
+                <section class="standart_sub">
+                    <span class="sub_title">BHA STANDART</span><br>
+                    <span class="sub_price">USD$ 45</span><span class="user_month">aylıq</span><br>
+                    <span class="tax">Vergi qiymətə daxil deyil</span><br>
+                    <button type="button" class="buy_button" id="buy_button"  onclick="buyButtonClick('standart')">İndi Al</button><br>
+                    <span class="include">Xidmətlər:</span><br>
+                    <span class="serve">
+                        <i class="fa-solid fa-check"></i> 10:00-22:00 Məşq etmək
+                    </span><br>
+                    <span class="serve">
+                        <i class="fa-solid fa-check"></i> Zaldakı bütün alətlərdən istifadə etmək
+                    </span><br>
+                    <span class="serve">
+                        <i class="fa-solid fa-check"></i> Zal tərəfindən ləvazimatla təmin olunmaq
+                    </span>
+                </section>
+                <section class="premium_sub">
+                    <span class="sub_title">BHA PREMIUM</span><br>
+                    <span class="sub_price">USD$ 60</span><span class="user_month">aylıq</span><br>
+                    <span class="tax">Vergi qiymətə daxil deyil</span><br>
+                    <button type="button" class="buy_button" id="buy_button" onclick="buyButtonClick('premium')">İndi Al</button><br>
+                    <span class="include">Xidmətlər:</span><br>
+                    <span class="serve">
+                        <i class="fa-solid fa-check"></i> 7/24 Məşq etmək
+                    </span><br>
+                    <span class="serve">
+                        <i class="fa-solid fa-check"></i> Zaldakı bütün alətlərdən istifadə etmək
+                    </span><br>
+                    <span class="serve">
+                        <i class="fa-solid fa-check"></i> Zal tərəfindən ləvazimatla təmin olunmaq
+                    </span>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_div_1">Fiziksəl Təkminləşmənin Tək Adresi</div>
+            <div  class="footer_div" >
+                <div class="footer_div_2">
+                    <ul>
+                        <li><a href="">ZALLAR</a></li>
+                        <li><a href="">TƏHSİL</a></li>
+                        <li><a href="">MÜƏLLİMLƏR</a></li>
+                        <li><a href="">TƏLƏBƏLƏR</a></li>
+                        <li><a href="">BİZ</a></li>
+                    </ul>
+                </div>
+                <div class="footer_div_3">
+                    <div>
+                        <i class="fa-regular fa-copyright"></i><span class="copyright">2024 Vasim Mammadli</span><br>
+                        <a href=""><i class="fa-brands fa-discord"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="dinamic.js" type="text/javascript"></script>
+</body>
+</html>
