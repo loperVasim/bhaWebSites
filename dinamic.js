@@ -43,7 +43,10 @@ function buyButtonClick(subscriptionType){
     }
 
     document.getElementById("subscriptionPiece").style.display = "block";
+    document.getElementById("website").style.filter = "blur(0.5rem)";
+    document.getElementById("website").style.transition = "200ms";
 }
 function clickSpace() {
     document.getElementById("subscriptionPiece").style.display = "none";  
+    document.getElementById("website").style.filter = "blur(0)";
 }

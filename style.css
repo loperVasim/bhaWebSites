@@ -387,6 +387,9 @@ main section{
     font-size: 2.5rem;
     color: red;
 }
+.closedButtonSubs:hover{
+    cursor:pointer;
+}
 /* !------------------------------------------FOOTER--------------------------------------------------*/
 
 footer{
