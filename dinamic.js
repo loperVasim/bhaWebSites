@@ -42,11 +42,20 @@ function buyButtonClick(subscriptionType){
         document.getElementById("serve3").innerHTML = subscriptionTypeData.premium.serve3;
     }
 
+    document.getElementById("subscriptionPieceContainer").style.display = "flex";
     document.getElementById("subscriptionPiece").style.display = "block";
     document.getElementById("website").style.filter = "blur(0.5rem)";
     document.getElementById("website").style.transition = "200ms";
 }
 function clickSpace() {
-    document.getElementById("subscriptionPiece").style.display = "none";  
+    document.getElementById("subscriptionPieceContainer").style.display = "none";
+    document.getElementById("subscriptionPiece").style.display = "none";
     document.getElementById("website").style.filter = "blur(0)";
+}
+function openBigPicture(pictureUrl){
+    document.getElementById("subscriptionPieceContainer").style.display = "flex";
+    document.getElementById("bigPicture").style.display = "block";
+    document.getElementById("bigPicture").style.backgroundImage = pictureUrl;
+    document.getElementById("website").style.filter = "blur(0.5rem)";
+    document.getElementById("website").style.transition = "200ms";
 }

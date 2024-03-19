@@ -258,7 +258,11 @@ main section{
     width: 85%;
     height: 40rem;
     margin: 4rem auto;
-    box-shadow:0.1rem 0.1rem 3rem #03528a , -0.1rem 0 4rem #b70326;
+    box-shadow:0.1rem 0.1rem 3rem #e2e2e1 , -0.1rem 0 4rem #b70326;
+}
+.promotion_image:hover{
+    box-shadow:0.1rem 0.1rem 1rem #e2e2e1 , -0.1rem 0 4rem #03528a;
+    cursor: pointer;
 }
 .promotion_web{
     display: none;
@@ -369,26 +373,83 @@ main section{
 }
 
 /* *------------------------------------------subscriptionPiece--------------------------------------------------------*/
-.subscriptionPiece{
-    width: 35%;
-    height: 70%;
-    background-color: #03b775;
-    position:fixed;
+.subscriptionPieceContainer{
+    width: 100%;
+    height: 70rem;
     display: none;
+    position: fixed;
     z-index: 1;
-    margin: 5rem 0 0 32%;
-    border-radius: 2.5rem;
+    margin-top: 10rem;
+    justify-content: center;
+}
+.subscriptionPiece{
+    width: 75%;
+    height: 70rem;
+    display: none;
+    background-color: #03b775;
     padding: 2% 0 0 0;
+    border-radius: 2.5rem;
+
 }
 .closedButtonSubs{
     float: right;
-    margin-right: 2rem ;
-    margin-top: -1rem;
-    font-size: 2.5rem;
+    margin-right: 2.5rem ;
+    font-size: 4rem;
     color: red;
 }
 .closedButtonSubs:hover{
     cursor:pointer;
+}
+.buttonBUY:hover{
+    background-color: #00ff11;
+}
+.subscriptionPiece .section_sub{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.subscriptionPiece .sub_title{
+    font: bolder 5rem tahoma;
+}
+.subscriptionPiece .sub_price{
+    font:  bold 4.5rem tahoma;;
+    margin-left: 8rem;
+    margin-top: 2rem;
+}
+.subscriptionPiece .user_month{
+    font: bold 2rem tahoma;
+}
+.subscriptionPiece .tax{
+    font: bold 2rem tahoma;
+    margin-left: 6rem;
+    margin-top: 5rem;
+}
+.subscriptionPiece .buy_button{
+    width: 40%;
+    height: 8rem;
+    font: bold 2.5rem tahoma;
+}
+.subscriptionPiece .include{
+    font: bold 2.5rem tahoma;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+.subscriptionPiece .serve{
+    display: inline-block;
+    font: bold 2.5rem tahoma;
+    margin-left: 3.8rem;
+    margin-top: 2rem;
+    padding: 0 4rem;
+}
+.subscriptionPiece .serve i{
+    margin-right: 1.5rem;
+}
+
+/*------------------------------------------BiG PICTURE--------------------------------------------------------*/
+.bigPicture{
+    width: 90%;
+    height: 80%;
+    background-color: #00ff11;
 }
 /* !------------------------------------------FOOTER--------------------------------------------------*/
 
@@ -483,6 +544,53 @@ footer{
     html{
         font-size: 10px;
     } 
+    .subscriptionPiece{
+        width: 37%;
+        height: 35rem;
+        padding: 1.5% 0 0 0;
+    }
+    .closedButtonSubs{
+        float: right;
+        margin-right: 2.5rem ;
+        font-size: 2rem;
+    }
+    .subscriptionPiece .sub_title{
+        font: bolder 2.5rem tahoma;
+    }
+    .subscriptionPiece .sub_price{
+        font:  bold 2rem tahoma;;
+        margin-left: 6rem;
+        margin-top: 1.5rem;
+    }
+    .subscriptionPiece .user_month{
+        font: bold 1rem tahoma;
+    }
+    .subscriptionPiece .tax{
+        font: bold 1rem tahoma;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    .subscriptionPiece .buy_button{
+        width: 37%;
+        height: 3rem;
+        font:  1.5rem tahoma;
+        margin: 1.5rem 29%;
+    }
+    .subscriptionPiece .include{
+        font: bold 1rem tahoma;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+    }
+    .subscriptionPiece .serve{
+        display: inline-block;
+        font: bold 1rem tahoma;
+        margin-left: 2.5rem;
+        margin-top: 1rem;
+        padding: 0 2rem;
+    }
+    .subscriptionPiece .serve i{
+        margin-right: 0.5rem;
+    }
     .section_sub{
         width: 100%;
         height: auto;
@@ -540,6 +648,9 @@ footer{
         background-color: #03b775;
         color: #e2e2e1;
         transition: all 0.4s;
+    }
+    .buttonBUY:hover{
+        background-color: #03528a;
     }
     .include{
         display: inline-block;
