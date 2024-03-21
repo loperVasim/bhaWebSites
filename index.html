@@ -14,7 +14,7 @@
     -->
     <section class="subscriptionPieceContainer" id="subscriptionPieceContainer">
         <section id="subscriptionPiece" class="subscriptionPiece" >
-            <i class='fa-solid fa-xmark closedButtonSubs' onclick="clickSpace()"></i>
+            <i class='fa-solid fa-xmark closedButtonSubs' onclick="closeSubscriptionPage()"></i>
             <span class="sub_title" id="sub_title"></span><br>
             <span class="sub_price" id="sub_price">USD$ </span><span class="user_month">aylıq</span><br>
             <span class="tax">Vergi qiymətə daxil deyil</span><br>
@@ -27,7 +27,9 @@
             <span class="serve" id="serve3">
             </span>
         </section>
-        <section class="bigPicture" id="bigPicture"></section>
+        <section class="bigPicture" id="bigPicture">
+            <i class='fa-solid fa-xmark closedButtonBP' onclick="closeBigPicture()"></i>
+        </section>
     </section>
         <!--
         !---------------------------------------------------------Website----------------------------------------------------------
@@ -81,7 +83,7 @@
                 </div>
             </section>
             <section class="section_2 section_main">
-                <div class="promotion_image_2 promotion_mobile promotion_image" id="promotion_image" onclick="openBigPicture('url(images/images_7.jpg)')"></div>
+                <div class="promotion_image_2 promotion_mobile promotion_image" id="promotion_image"></div>
                 <div class="promotion_txt_2 promotion_txt">
                     <span>Müəllimlərimizin Dəstəyi İlə Addım-Addım</span>
                     <hr>
@@ -89,7 +91,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tenetur ipsa maiores accusamus quibusdam incidunt.
                     </span>
                 </div>
-                <div class="promotion_image_2 promotion_web promotion_image"></div>
+                <div class="promotion_image_2 promotion_web promotion_image" onclick="openBigPicture('url(images/images_7.jpg)')"></div>
             </section>
             <section class="section_3 section_main">
                 <div class="promotion_image_3 promotion_image" id="promotion_image" onclick="openBigPicture('url(images/images_5.jpg)')"></div>

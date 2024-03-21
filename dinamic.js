@@ -47,15 +47,22 @@ function buyButtonClick(subscriptionType){
     document.getElementById("website").style.filter = "blur(0.5rem)";
     document.getElementById("website").style.transition = "200ms";
 }
-function clickSpace() {
+function closeSubscriptionPage() {
     document.getElementById("subscriptionPieceContainer").style.display = "none";
     document.getElementById("subscriptionPiece").style.display = "none";
     document.getElementById("website").style.filter = "blur(0)";
 }
 function openBigPicture(pictureUrl){
-    document.getElementById("subscriptionPieceContainer").style.display = "flex";
-    document.getElementById("bigPicture").style.display = "block";
-    document.getElementById("bigPicture").style.backgroundImage = pictureUrl;
-    document.getElementById("website").style.filter = "blur(0.5rem)";
-    document.getElementById("website").style.transition = "200ms";
+    if(window.innerWidth>=1370){
+        document.getElementById("subscriptionPieceContainer").style.display = "flex";
+        document.getElementById("bigPicture").style.display = "block";
+        document.getElementById("bigPicture").style.backgroundImage = pictureUrl;
+        document.getElementById("website").style.filter = "blur(0.5rem)";
+        document.getElementById("website").style.transition = "200ms";
+    }
+}
+function closeBigPicture() {
+    document.getElementById("subscriptionPieceContainer").style.display = "none";
+    document.getElementById("bigPicture").style.display = "none";
+    document.getElementById("website").style.filter = "blur(0)";
 }
